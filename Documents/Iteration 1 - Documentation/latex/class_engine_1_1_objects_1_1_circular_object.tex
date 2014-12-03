@@ -1,0 +1,137 @@
+\section{Engine.Objects.CircularObject Class Reference}
+\label{class_engine_1_1_objects_1_1_circular_object}\index{Engine::Objects::CircularObject@{Engine::Objects::CircularObject}}
+Inheritance diagram for Engine.Objects.CircularObject:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_engine_1_1_objects_1_1_circular_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf CircularObject} ()
+\item 
+{\bf CircularObject} (int a, int b)
+\item 
+{\bf CircularObject} (double mass, {\bf Point2D} location, double fi, {\bf Velocity} velocity, int a, int b)
+\item 
+int {\bf getA} ()
+\item 
+void {\bf setA} (int a)
+\item 
+int {\bf getB} ()
+\item 
+void {\bf setB} (int b)
+\item 
+{\bf Point2D} {\bfseries getCenter} ()\label{class_engine_1_1_objects_1_1_circular_object_a154e248dce79ba14bdb9ba0d377235ec}
+
+\item 
+void {\bfseries setCenter} ({\bf Point2D} center)\label{class_engine_1_1_objects_1_1_circular_object_a824b3808845ee9afcd8bee341bb08b11}
+
+\item 
+void {\bfseries updateCenter} ()\label{class_engine_1_1_objects_1_1_circular_object_ae651728538199280364efa7e1e96576e}
+
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries a} = 100\label{class_engine_1_1_objects_1_1_circular_object_a36457cf37cac53dd7cf072a76219ea55}
+
+\item 
+int {\bfseries b} = 100\label{class_engine_1_1_objects_1_1_circular_object_ab07878d2a49b18210c6d8e1d2268c1b1}
+
+\item 
+{\bf Point2D} {\bfseries center}\label{class_engine_1_1_objects_1_1_circular_object_abed3c114e7e777a41be8a484f5230ee0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by IntelliJ IDEA. User: Sina Solaimanpour Date: 10/18/11 Time: 10:40 PM 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Engine::Objects::CircularObject@{Engine::Objects::CircularObject}!CircularObject@{CircularObject}}
+\index{CircularObject@{CircularObject}!Engine::Objects::CircularObject@{Engine::Objects::CircularObject}}
+\subsubsection[{CircularObject}]{\setlength{\rightskip}{0pt plus 5cm}Engine.Objects.CircularObject.CircularObject (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_circular_object_a703d513c6a40fb72294759d6ed1af8a8}
+Default Constructor, It sets a = 100, and b = 100 Which it creates a Circle With 2R = 100 \index{Engine::Objects::CircularObject@{Engine::Objects::CircularObject}!CircularObject@{CircularObject}}
+\index{CircularObject@{CircularObject}!Engine::Objects::CircularObject@{Engine::Objects::CircularObject}}
+\subsubsection[{CircularObject}]{\setlength{\rightskip}{0pt plus 5cm}Engine.Objects.CircularObject.CircularObject (
+\begin{DoxyParamCaption}
+\item[{int}]{ a, }
+\item[{int}]{ b}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_circular_object_a8a7bd04d778f36a3cf29cedab2798863}
+It Creates a Circular object with A = a, and B = b if you pass values which a == b it will create a circle with 2R == a == b other properties will be set to a default value preset. (For More Info Read in Object2D's Page...)
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]Width of the Circular Object \item[{\em b}]Height og the Circular Object \end{DoxyParams}
+\index{Engine::Objects::CircularObject@{Engine::Objects::CircularObject}!CircularObject@{CircularObject}}
+\index{CircularObject@{CircularObject}!Engine::Objects::CircularObject@{Engine::Objects::CircularObject}}
+\subsubsection[{CircularObject}]{\setlength{\rightskip}{0pt plus 5cm}Engine.Objects.CircularObject.CircularObject (
+\begin{DoxyParamCaption}
+\item[{double}]{ mass, }
+\item[{{\bf Point2D}}]{ location, }
+\item[{double}]{ fi, }
+\item[{{\bf Velocity}}]{ velocity, }
+\item[{int}]{ a, }
+\item[{int}]{ b}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_circular_object_a38cd1eda3c96edadd3f67521a45626d7}
+Main Constructor for the Circular Objects
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em mass}]Object's Mass \item[{\em location}]Object's Location \item[{\em fi}]Object's Rotation Angle (in Degrees) \item[{\em velocity}]Object's Initial Velocity \item[{\em a}]Width of the Circular Object \item[{\em b}]Height og the Circular Object \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Engine::Objects::CircularObject@{Engine::Objects::CircularObject}!getA@{getA}}
+\index{getA@{getA}!Engine::Objects::CircularObject@{Engine::Objects::CircularObject}}
+\subsubsection[{getA}]{\setlength{\rightskip}{0pt plus 5cm}int Engine.Objects.CircularObject.getA (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_circular_object_a8aba2e17074d60842bd8e1bba0b05267}
+\begin{DoxyReturn}{Returns}
+Returns Circular Object's Width 
+\end{DoxyReturn}
+\index{Engine::Objects::CircularObject@{Engine::Objects::CircularObject}!getB@{getB}}
+\index{getB@{getB}!Engine::Objects::CircularObject@{Engine::Objects::CircularObject}}
+\subsubsection[{getB}]{\setlength{\rightskip}{0pt plus 5cm}int Engine.Objects.CircularObject.getB (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_circular_object_aee3a2ad1476b506539b4967e37281dda}
+\begin{DoxyReturn}{Returns}
+Returns Circular Object's Width 
+\end{DoxyReturn}
+\index{Engine::Objects::CircularObject@{Engine::Objects::CircularObject}!setA@{setA}}
+\index{setA@{setA}!Engine::Objects::CircularObject@{Engine::Objects::CircularObject}}
+\subsubsection[{setA}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.CircularObject.setA (
+\begin{DoxyParamCaption}
+\item[{int}]{ a}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_circular_object_a4217ff1de7f7d57bc61b6e00538e29d8}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]Circular Object's Width Value \end{DoxyParams}
+\index{Engine::Objects::CircularObject@{Engine::Objects::CircularObject}!setB@{setB}}
+\index{setB@{setB}!Engine::Objects::CircularObject@{Engine::Objects::CircularObject}}
+\subsubsection[{setB}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.CircularObject.setB (
+\begin{DoxyParamCaption}
+\item[{int}]{ b}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_circular_object_a78c26995aa4c96827bb3e39f29f0f040}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em b}]Circular Object's Width Value \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/Engine/Objects/CircularObject.java\end{DoxyCompactItemize}

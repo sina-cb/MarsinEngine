@@ -1,0 +1,46 @@
+\section{Engine.Collision.CollisionAdapter Class Reference}
+\label{class_engine_1_1_collision_1_1_collision_adapter}\index{Engine::Collision::CollisionAdapter@{Engine::Collision::CollisionAdapter}}
+Inheritance diagram for Engine.Collision.CollisionAdapter:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_engine_1_1_collision_1_1_collision_adapter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf collisionOccurred} ({\bf CollisionEvent} e)
+\end{DoxyCompactItemize}
+\subsection*{Static Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static boolean {\bfseries ru} = true\label{class_engine_1_1_collision_1_1_collision_adapter_a7fb96009605a7a75dd321ffc051a8e10}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by IntelliJ IDEA. User: Sina Date: 10/26/11 Time: 2:40 PM To change this template use File $|$ Settings $|$ File Templates. 
+
+\subsection{Member Function Documentation}
+\index{Engine::Collision::CollisionAdapter@{Engine::Collision::CollisionAdapter}!collisionOccurred@{collisionOccurred}}
+\index{collisionOccurred@{collisionOccurred}!Engine::Collision::CollisionAdapter@{Engine::Collision::CollisionAdapter}}
+\subsubsection[{collisionOccurred}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Collision.CollisionAdapter.collisionOccurred (
+\begin{DoxyParamCaption}
+\item[{{\bf CollisionEvent}}]{ e}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_collision_1_1_collision_adapter_a7e8127d3f0793f74093f0bfa6d2156dc}
+handles the collision event based on different types of objects
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]fired collision event from the world class \end{DoxyParams}
+
+
+Implements {\bf Engine.Collision.CollisionListener} \doxyref{}{p.}{interface_engine_1_1_collision_1_1_collision_listener}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/Engine/Collision/CollisionAdapter.java\end{DoxyCompactItemize}

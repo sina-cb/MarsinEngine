@@ -1,0 +1,166 @@
+\section{Engine.Collision.CollisionEvent Class Reference}
+\label{class_engine_1_1_collision_1_1_collision_event}\index{Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}}
+
+
+Inherits java::util::EventObject.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf CollisionEvent} ({\bf Object2D} source, {\bf Object2D} other, {\bf Vector2D} translation, boolean intersected, boolean willIntersect)
+\item 
+{\bf CollisionEvent} ({\bf Object2D} source)
+\item 
+{\bf Object2D} {\bf getOther} ()
+\item 
+void {\bf setOther} ({\bf Object2D} other)
+\item 
+{\bf Vector2D} {\bf getTranslation} ()
+\item 
+void {\bf setTranslation} ({\bf Vector2D} translation)
+\item 
+boolean {\bf isIntersected} ()
+\item 
+void {\bf setIntersected} (boolean intersected)
+\item 
+boolean {\bf isWillIntersect} ()
+\item 
+void {\bf setWillIntersect} (boolean willIntersect)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Object2D} {\bfseries other}\label{class_engine_1_1_collision_1_1_collision_event_adf789749e2947ab1217b15e4ceff1229}
+
+\item 
+{\bf Vector2D} {\bfseries translation}\label{class_engine_1_1_collision_1_1_collision_event_acf8007af2bc4791d649b92f365e76367}
+
+\item 
+boolean {\bfseries intersected}\label{class_engine_1_1_collision_1_1_collision_event_a7de3da3f4b28d158ec1e7acd7a75a2f6}
+
+\item 
+boolean {\bfseries willIntersect}\label{class_engine_1_1_collision_1_1_collision_event_a49433d2223f28f82c79da1c4fd2dd7f9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by IntelliJ IDEA. User: Sina Solaimanpour Date: 10/18/11 Time: 10:36 PM 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}!CollisionEvent@{CollisionEvent}}
+\index{CollisionEvent@{CollisionEvent}!Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}}
+\subsubsection[{CollisionEvent}]{\setlength{\rightskip}{0pt plus 5cm}Engine.Collision.CollisionEvent.CollisionEvent (
+\begin{DoxyParamCaption}
+\item[{{\bf Object2D}}]{ source, }
+\item[{{\bf Object2D}}]{ other, }
+\item[{{\bf Vector2D}}]{ translation, }
+\item[{boolean}]{ intersected, }
+\item[{boolean}]{ willIntersect}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_collision_1_1_collision_event_af991ba11c5a0f3e0e38eea49b24162f9}
+Creates a Collision Event To Hold The Collision's Data Needed By The Handler
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The Source Object of The Collision \item[{\em other}]The Other Object of The Collision \item[{\em translation}]The Correction Vector For The Source Object \item[{\em intersected}]a Boolean Which Indicates if There Are Any Collision \item[{\em willIntersect}]a Boolean Which Indicated if a Collision Will Happen Later Or Not \end{DoxyParams}
+\index{Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}!CollisionEvent@{CollisionEvent}}
+\index{CollisionEvent@{CollisionEvent}!Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}}
+\subsubsection[{CollisionEvent}]{\setlength{\rightskip}{0pt plus 5cm}Engine.Collision.CollisionEvent.CollisionEvent (
+\begin{DoxyParamCaption}
+\item[{{\bf Object2D}}]{ source}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_collision_1_1_collision_event_a2f546d05233e127d84e61780691a3ff4}
+Default Constructor For The \doxyref{CollisionEvent}{p.}{class_engine_1_1_collision_1_1_collision_event} Note: This Constructor Should Not be Used At All!!!
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The Source Object of The Collision \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}!getOther@{getOther}}
+\index{getOther@{getOther}!Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}}
+\subsubsection[{getOther}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object2D} Engine.Collision.CollisionEvent.getOther (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_collision_1_1_collision_event_a29c7a1b52790c5bb75b7a62f90c048aa}
+\begin{DoxyReturn}{Returns}
+Returns The Other Object 
+\end{DoxyReturn}
+\index{Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}!getTranslation@{getTranslation}}
+\index{getTranslation@{getTranslation}!Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}}
+\subsubsection[{getTranslation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2D} Engine.Collision.CollisionEvent.getTranslation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_collision_1_1_collision_event_a30baa7bee9ca9612538afc0489a47732}
+\begin{DoxyReturn}{Returns}
+Event's Translation Vector 
+\end{DoxyReturn}
+\index{Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}!isIntersected@{isIntersected}}
+\index{isIntersected@{isIntersected}!Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}}
+\subsubsection[{isIntersected}]{\setlength{\rightskip}{0pt plus 5cm}boolean Engine.Collision.CollisionEvent.isIntersected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_collision_1_1_collision_event_ada456cf233f9881255b3bfbf25a1f3d3}
+\begin{DoxyReturn}{Returns}
+if Intersection occurred 
+\end{DoxyReturn}
+\index{Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}!isWillIntersect@{isWillIntersect}}
+\index{isWillIntersect@{isWillIntersect}!Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}}
+\subsubsection[{isWillIntersect}]{\setlength{\rightskip}{0pt plus 5cm}boolean Engine.Collision.CollisionEvent.isWillIntersect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_collision_1_1_collision_event_a88505fefb7e47522aac55e4fa5ac9af5}
+\begin{DoxyReturn}{Returns}
+Checks if there will be any Intersection 
+\end{DoxyReturn}
+\index{Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}!setIntersected@{setIntersected}}
+\index{setIntersected@{setIntersected}!Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}}
+\subsubsection[{setIntersected}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Collision.CollisionEvent.setIntersected (
+\begin{DoxyParamCaption}
+\item[{boolean}]{ intersected}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_collision_1_1_collision_event_af0955f7826c3545d9f8468d5600b1b2e}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em intersected}]Sets if There's Any Intersection \end{DoxyParams}
+\index{Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}!setOther@{setOther}}
+\index{setOther@{setOther}!Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}}
+\subsubsection[{setOther}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Collision.CollisionEvent.setOther (
+\begin{DoxyParamCaption}
+\item[{{\bf Object2D}}]{ other}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_collision_1_1_collision_event_a9f769d6609ae447895c22cbbe94215dd}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em other}]Sets The Other Object \end{DoxyParams}
+\index{Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}!setTranslation@{setTranslation}}
+\index{setTranslation@{setTranslation}!Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}}
+\subsubsection[{setTranslation}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Collision.CollisionEvent.setTranslation (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2D}}]{ translation}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_collision_1_1_collision_event_a67d886f20902c363bf823a314b8731f7}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em translation}]Sets The Event's Translation \end{DoxyParams}
+\index{Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}!setWillIntersect@{setWillIntersect}}
+\index{setWillIntersect@{setWillIntersect}!Engine::Collision::CollisionEvent@{Engine::Collision::CollisionEvent}}
+\subsubsection[{setWillIntersect}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Collision.CollisionEvent.setWillIntersect (
+\begin{DoxyParamCaption}
+\item[{boolean}]{ willIntersect}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_collision_1_1_collision_event_a35d431f4f50884d6d623ad2c5050d3d1}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em willIntersect}]Sets if There will be any intersection at the next step \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/Engine/Collision/CollisionEvent.java\end{DoxyCompactItemize}

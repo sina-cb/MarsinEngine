@@ -1,0 +1,79 @@
+\section{Engine.Forces.Force Class Reference}
+\label{class_engine_1_1_forces_1_1_force}\index{Engine::Forces::Force@{Engine::Forces::Force}}
+Inheritance diagram for Engine.Forces.Force:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_engine_1_1_forces_1_1_force}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double {\bf getForceX} ()
+\item 
+void {\bf setForceX} (double forceX)
+\item 
+double {\bf getForceY} ()
+\item 
+void {\bf setForceY} (double forceY)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries forceX}\label{class_engine_1_1_forces_1_1_force_ac5a27542e660d8c192a207bd9def4434}
+
+\item 
+double {\bfseries forceY}\label{class_engine_1_1_forces_1_1_force_a9b070b187e9fd27af9c9621cffc0125c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by IntelliJ IDEA. User: Sina Solaimanpour Date: 10/18/11 Time: 10:35 PM 
+
+\subsection{Member Function Documentation}
+\index{Engine::Forces::Force@{Engine::Forces::Force}!getForceX@{getForceX}}
+\index{getForceX@{getForceX}!Engine::Forces::Force@{Engine::Forces::Force}}
+\subsubsection[{getForceX}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.Forces.Force.getForceX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_forces_1_1_force_a992d0304e403ef5f64c75d00265a9396}
+\begin{DoxyReturn}{Returns}
+Returns \doxyref{Force}{p.}{class_engine_1_1_forces_1_1_force} Value on X Axis 
+\end{DoxyReturn}
+\index{Engine::Forces::Force@{Engine::Forces::Force}!getForceY@{getForceY}}
+\index{getForceY@{getForceY}!Engine::Forces::Force@{Engine::Forces::Force}}
+\subsubsection[{getForceY}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.Forces.Force.getForceY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_forces_1_1_force_a83ffde6534ac328c9d708c7736c0524f}
+\begin{DoxyReturn}{Returns}
+Returns \doxyref{Force}{p.}{class_engine_1_1_forces_1_1_force} Value on Y Axis 
+\end{DoxyReturn}
+\index{Engine::Forces::Force@{Engine::Forces::Force}!setForceX@{setForceX}}
+\index{setForceX@{setForceX}!Engine::Forces::Force@{Engine::Forces::Force}}
+\subsubsection[{setForceX}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Forces.Force.setForceX (
+\begin{DoxyParamCaption}
+\item[{double}]{ forceX}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_forces_1_1_force_a2738ad17b43879907d800a7cd21c1a13}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em forceX}]Set The \doxyref{Force}{p.}{class_engine_1_1_forces_1_1_force} Value on X Axis \end{DoxyParams}
+\index{Engine::Forces::Force@{Engine::Forces::Force}!setForceY@{setForceY}}
+\index{setForceY@{setForceY}!Engine::Forces::Force@{Engine::Forces::Force}}
+\subsubsection[{setForceY}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Forces.Force.setForceY (
+\begin{DoxyParamCaption}
+\item[{double}]{ forceY}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_forces_1_1_force_a5905b1085945a92bbe07f45a834e0917}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em forceX}]Set The \doxyref{Force}{p.}{class_engine_1_1_forces_1_1_force} Value on Y Axis \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/Engine/Forces/Force.java\end{DoxyCompactItemize}

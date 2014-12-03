@@ -1,0 +1,260 @@
+\section{Engine.Objects.Object2D Class Reference}
+\label{class_engine_1_1_objects_1_1_object2_d}\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+Inheritance diagram for Engine.Objects.Object2D:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_engine_1_1_objects_1_1_object2_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Object2D} ()
+\item 
+void {\bf addForce} ({\bf Force} force)
+\item 
+void {\bf setMass} (double mass)
+\item 
+void {\bf setVelocity} ({\bf Velocity} velocity)
+\item 
+{\bf Point2D} {\bf getLocation} ()
+\item 
+void {\bf setLocation} ({\bf Point2D} location)
+\item 
+{\bf Point2D} {\bf getRotationCenter} ()
+\item 
+void {\bf setRotationCenter} ({\bf Point2D} rotationCenter)
+\item 
+void {\bf setForces} (List$<$ {\bf Force} $>$ forces)
+\item 
+void {\bf setFi} (double fi)
+\item 
+double {\bf getMass} ()
+\item 
+List$<$ {\bf Force} $>$ {\bf getForces} ()
+\item 
+{\bf Velocity} {\bf getVelocity} ()
+\item 
+double {\bf getFi} ()
+\item 
+double {\bf getAngularSpeed} ()
+\item 
+void {\bf setAngularSpeed} (double angularSpeed)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Object2D} (double mass, {\bf Point2D} location, double fi, {\bf Velocity} velocity)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries mass} = 10\label{class_engine_1_1_objects_1_1_object2_d_a27bb323298a294c1300b418f1594a035}
+
+\item 
+{\bf Point2D} {\bfseries location} = new {\bf Point2D}(10, 10)\label{class_engine_1_1_objects_1_1_object2_d_a18f9039db61d46c7a6e4eff2f9313b7b}
+
+\item 
+List$<$ {\bf Force} $>$ {\bfseries forces} = new ArrayList$<${\bf Force}$>$()\label{class_engine_1_1_objects_1_1_object2_d_a99c5e5991902d96ed7175a1b7b73cc39}
+
+\item 
+{\bf Velocity} {\bfseries velocity} = new {\bf Velocity}()\label{class_engine_1_1_objects_1_1_object2_d_af930cf1ed480768e0761ab611d124a7b}
+
+\item 
+double {\bfseries fi} = 0\label{class_engine_1_1_objects_1_1_object2_d_ad1963c50e96ce6fb67ecd4134421826c}
+
+\item 
+{\bf Point2D} {\bfseries rotationCenter} = new {\bf Point2D}(0, 0)\label{class_engine_1_1_objects_1_1_object2_d_ad9a655b0e58e7f5596285bd05633b7de}
+
+\item 
+double {\bfseries angularSpeed} = 0\label{class_engine_1_1_objects_1_1_object2_d_afa77acd6cba8ba5e559a174b79926a3b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by IntelliJ IDEA. User: Sina Solaimanpour Date: 10/18/11 Time: 10:34 PM 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!Object2D@{Object2D}}
+\index{Object2D@{Object2D}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{Object2D}]{\setlength{\rightskip}{0pt plus 5cm}Engine.Objects.Object2D.Object2D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_ad8ad5818609214fb493f1ecaad3e421e}
+Default Constructor For \doxyref{Object2D}{p.}{class_engine_1_1_objects_1_1_object2_d} This Will set the values as below mass = 10 location = (10,10) velocity = (0,0) fi = 0 degrees rotationCenter = (0,0) \index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!Object2D@{Object2D}}
+\index{Object2D@{Object2D}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{Object2D}]{\setlength{\rightskip}{0pt plus 5cm}Engine.Objects.Object2D.Object2D (
+\begin{DoxyParamCaption}
+\item[{double}]{ mass, }
+\item[{{\bf Point2D}}]{ location, }
+\item[{double}]{ fi, }
+\item[{{\bf Velocity}}]{ velocity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_engine_1_1_objects_1_1_object2_d_a83eada6c84a4613600d1cbf2c120f8a6}
+Main Constructor for \doxyref{Object2D}{p.}{class_engine_1_1_objects_1_1_object2_d} Class. Notes: \doxyref{Object2D}{p.}{class_engine_1_1_objects_1_1_object2_d} is an abstract class extended by Rectangular And Circular Objects, This Constructor is used within Those Classes Constructor...
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em mass}]Object's Mass Value \item[{\em location}]Object's Location \item[{\em fi}]Object's rotation angle \item[{\em velocity}]Object's Velocity \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!addForce@{addForce}}
+\index{addForce@{addForce}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{addForce}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.Object2D.addForce (
+\begin{DoxyParamCaption}
+\item[{{\bf Force}}]{ force}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_a359eb311348fd3ff4d2807955dd50eec}
+This will add a new force to the forces applied to the object
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em force}]Force Vector \end{DoxyParams}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!getAngularSpeed@{getAngularSpeed}}
+\index{getAngularSpeed@{getAngularSpeed}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{getAngularSpeed}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.Objects.Object2D.getAngularSpeed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_ad8c0acc8f45d0db99f8b0b5fce1946e8}
+\begin{DoxyReturn}{Returns}
+Object's Angular Speed 
+\end{DoxyReturn}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!getFi@{getFi}}
+\index{getFi@{getFi}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{getFi}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.Objects.Object2D.getFi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_aaeff1c88aba579535f81cb55d1b53bc0}
+\begin{DoxyReturn}{Returns}
+Object's Rotation Degree 
+\end{DoxyReturn}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!getForces@{getForces}}
+\index{getForces@{getForces}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{getForces}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Force}$>$ Engine.Objects.Object2D.getForces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_aa37f37993096f2a2203067030cb67cf9}
+\begin{DoxyReturn}{Returns}
+Object's Forces List 
+\end{DoxyReturn}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!getLocation@{getLocation}}
+\index{getLocation@{getLocation}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{getLocation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point2D} Engine.Objects.Object2D.getLocation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_aef4d15da78d2c48e4898e782de063722}
+\begin{DoxyReturn}{Returns}
+Object's Location Point Without Rotation Applied 
+\end{DoxyReturn}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!getMass@{getMass}}
+\index{getMass@{getMass}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{getMass}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.Objects.Object2D.getMass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_a507dd570ed5af46e29a7d1d3af1956c9}
+\begin{DoxyReturn}{Returns}
+Object's Mass 
+\end{DoxyReturn}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!getRotationCenter@{getRotationCenter}}
+\index{getRotationCenter@{getRotationCenter}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{getRotationCenter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point2D} Engine.Objects.Object2D.getRotationCenter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_ae69f159fce2bfde2b2f105055ba69ca2}
+\begin{DoxyReturn}{Returns}
+Object's Rotation Center 
+\end{DoxyReturn}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{getVelocity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Velocity} Engine.Objects.Object2D.getVelocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_a63a16875b5d4be0e5fd4e7a271f5b690}
+\begin{DoxyReturn}{Returns}
+Object's Velocity Vector 
+\end{DoxyReturn}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!setAngularSpeed@{setAngularSpeed}}
+\index{setAngularSpeed@{setAngularSpeed}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{setAngularSpeed}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.Object2D.setAngularSpeed (
+\begin{DoxyParamCaption}
+\item[{double}]{ angularSpeed}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_acf334c4443a38ab5a4a5442501f1f05c}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em angularSpeed}]Set Object's Angular Speed \end{DoxyParams}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!setFi@{setFi}}
+\index{setFi@{setFi}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{setFi}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.Object2D.setFi (
+\begin{DoxyParamCaption}
+\item[{double}]{ fi}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_a1b5918e66038af929bfdca3b1bbb6db2}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fi}]This Will Set The Object's Rotation Degree \end{DoxyParams}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!setForces@{setForces}}
+\index{setForces@{setForces}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{setForces}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.Object2D.setForces (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf Force} $>$}]{ forces}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_a4cb3c8defdbd84ae57faa9d999a7a2ad}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em forces}]This Will Set The Whole Object's Forces \end{DoxyParams}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!setLocation@{setLocation}}
+\index{setLocation@{setLocation}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{setLocation}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.Object2D.setLocation (
+\begin{DoxyParamCaption}
+\item[{{\bf Point2D}}]{ location}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_abe460e3e3982f229413a093e0ab35dcd}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em location}]Set Object's Location Point before rotation \end{DoxyParams}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!setMass@{setMass}}
+\index{setMass@{setMass}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{setMass}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.Object2D.setMass (
+\begin{DoxyParamCaption}
+\item[{double}]{ mass}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_a652e9f67731c97967c668c0094e6c2c2}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em mass}]Returns Object's Mass \end{DoxyParams}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!setRotationCenter@{setRotationCenter}}
+\index{setRotationCenter@{setRotationCenter}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{setRotationCenter}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.Object2D.setRotationCenter (
+\begin{DoxyParamCaption}
+\item[{{\bf Point2D}}]{ rotationCenter}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_a9465206d386ed973d623ae940314956c}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rotationCenter}]The Point Which The Object Rotates Around \end{DoxyParams}
+\index{Engine::Objects::Object2D@{Engine::Objects::Object2D}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!Engine::Objects::Object2D@{Engine::Objects::Object2D}}
+\subsubsection[{setVelocity}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.Object2D.setVelocity (
+\begin{DoxyParamCaption}
+\item[{{\bf Velocity}}]{ velocity}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_object2_d_a7df0d3b59d2b5caed31637113c59de6f}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em velocity}]Object's Velocity's Vector \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/Engine/Objects/Object2D.java\end{DoxyCompactItemize}

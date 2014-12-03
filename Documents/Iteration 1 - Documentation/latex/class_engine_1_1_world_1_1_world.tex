@@ -1,0 +1,732 @@
+\section{Engine.World.World Class Reference}
+\label{class_engine_1_1_world_1_1_world}\index{Engine::World::World@{Engine::World::World}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf addCollisionListener} ({\bf CollisionListener} listener)
+\item 
+void {\bf removeCollisionListener} ({\bf CollisionListener} listener)
+\item 
+{\bf World} ()
+\item 
+{\bf World} (double gravity, boolean ceil, boolean ground, boolean leftWall, boolean rightWall, int width, int height, int scale, JFrame frame)
+\item 
+{\bf World} (double gravity, int scale, int width, int height, JFrame frame)
+\item 
+void {\bf updateObject} ({\bf Object2D} obj)
+\item 
+void {\bf drawScale} (Graphics2D g)
+\item 
+void {\bf updateWorld} ()
+\item 
+Double[$\,$] {\bf projectObject} ({\bf Vector2D} axis, {\bf RectangularObject} obj)
+\item 
+Double[$\,$] {\bf projectObject} ({\bf Vector2D} axis, {\bf CircularObject} obj)
+\item 
+double {\bf IntervalDistance} (double minA, double maxA, double minB, double maxB)
+\item 
+void {\bf setDefaultFrame} (JFrame defaultFrame)
+\item 
+void {\bf addObject} ({\bf Object2D} obj)
+\item 
+double {\bf getWindPower} ()
+\item 
+void {\bf setWindPower} (double windPower)
+\item 
+double {\bf getWindAngle} ()
+\item 
+void {\bf setWindAngle} (double windAngle)
+\item 
+double {\bf getTimeStep} ()
+\item 
+void {\bf setTimeStep} (int timeStep)
+\item 
+JFrame {\bf getDefaultFrame} ()
+\item 
+double {\bf getGravity} ()
+\item 
+void {\bf setGravity} (double gravity)
+\item 
+Timer {\bf getClock} ()
+\item 
+void {\bf setClock} (Timer clock)
+\item 
+boolean {\bf isCeil} ()
+\item 
+void {\bf setCeil} (boolean ceil)
+\item 
+boolean {\bf isGround} ()
+\item 
+void {\bf setGround} (boolean ground)
+\item 
+boolean {\bf isLeftWall} ()
+\item 
+void {\bf setLeftWall} (boolean leftWall)
+\item 
+boolean {\bf isRightWall} ()
+\item 
+void {\bf setRightWall} (boolean rightWall)
+\item 
+List$<$ {\bf Object2D} $>$ {\bf getObjects} ()
+\item 
+int {\bf getScale} ()
+\item 
+void {\bf setScale} (int scale)
+\item 
+int {\bf getWidth} ()
+\item 
+void {\bf setWidth} (int width)
+\item 
+int {\bf getHeight} ()
+\item 
+void {\bf setHeight} (int height)
+\item 
+Canvas {\bf getWorldCanvas} ()
+\item 
+void {\bf setWorldCanvas} (Canvas worldCanvas)
+\item 
+boolean {\bf isLeaveShadow} ()
+\item 
+void {\bf setLeaveShadow} (boolean leaveShadow)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+javax.swing.event.EventListenerList {\bf listenerList} = new javax.swing.event.EventListenerList()
+\end{DoxyCompactItemize}
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf fireCollisionEvent} ({\bf CollisionEvent} evt)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries gravity} = 0.98\label{class_engine_1_1_world_1_1_world_a325dacf5546bf2573cca5c37f052015d}
+
+\item 
+double {\bfseries windPower} = 0\label{class_engine_1_1_world_1_1_world_a32d1bba862c7aa187da584705e19cd85}
+
+\item 
+double {\bfseries windAngle} = 0\label{class_engine_1_1_world_1_1_world_a435db6f8ab2eac447c228295edab306e}
+
+\item 
+Timer {\bfseries clock} = new Timer()\label{class_engine_1_1_world_1_1_world_a6061e1e0566b91e8870dd62d84301aa4}
+
+\item 
+boolean {\bfseries ceil} = true\label{class_engine_1_1_world_1_1_world_aadc1c4305f9235f44abc8286139dd2b2}
+
+\item 
+boolean {\bfseries ground} = true\label{class_engine_1_1_world_1_1_world_acfab8905c98c83af71b26cfec265642f}
+
+\item 
+boolean {\bfseries leftWall} = true\label{class_engine_1_1_world_1_1_world_ad9388f768ba4891ce20232231b0113a8}
+
+\item 
+boolean {\bfseries rightWall} = true\label{class_engine_1_1_world_1_1_world_a103937e2f8ba6d14136b96348a01d4d4}
+
+\item 
+List$<$ {\bf Object2D} $>$ {\bfseries objects} = new ArrayList$<${\bf Object2D}$>$()\label{class_engine_1_1_world_1_1_world_a2903968632a0072a5107ee051b35eb81}
+
+\item 
+List$<$ {\bf Object2D} $>$ {\bfseries rotatingObjects} = new ArrayList$<${\bf Object2D}$>$()\label{class_engine_1_1_world_1_1_world_ac3874d7a710ac634612bf09ed8084308}
+
+\item 
+int {\bfseries scale} = 50\label{class_engine_1_1_world_1_1_world_a76a4e8d16c3c01adb49b517c33221df9}
+
+\item 
+int {\bfseries width}\label{class_engine_1_1_world_1_1_world_a3ee2f77aca754151705e6719710720d4}
+
+\item 
+int {\bfseries height}\label{class_engine_1_1_world_1_1_world_aa9ef92230266992d3e328ee67674c0a8}
+
+\item 
+double {\bfseries timeStep} = {\bf Properties.timeStep}\label{class_engine_1_1_world_1_1_world_ad3249b2e3f5e6d328591c72214e5924a}
+
+\item 
+JFrame {\bfseries defaultFrame}\label{class_engine_1_1_world_1_1_world_a9bcfb6a34b93ea6d4dbb54bbff10e713}
+
+\item 
+Canvas {\bfseries worldCanvas}\label{class_engine_1_1_world_1_1_world_ac95714d63363d98d664ce2e89680c0be}
+
+\item 
+BufferStrategy {\bfseries strategy}\label{class_engine_1_1_world_1_1_world_a70a113725642db22c38cb3f013e3be03}
+
+\item 
+boolean {\bfseries leaveShadow} = false\label{class_engine_1_1_world_1_1_world_abd29ac6c49124e64ed0846d9271b7519}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by IntelliJ IDEA. User: Sina Solaimanpour Date: 10/18/11 Time: 10:43 PM 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Engine::World::World@{Engine::World::World}!World@{World}}
+\index{World@{World}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{World}]{\setlength{\rightskip}{0pt plus 5cm}Engine.World.World.World (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_ae985ae6c588006c1a7e89e4c204e4af8}
+constructor of world \index{Engine::World::World@{Engine::World::World}!World@{World}}
+\index{World@{World}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{World}]{\setlength{\rightskip}{0pt plus 5cm}Engine.World.World.World (
+\begin{DoxyParamCaption}
+\item[{double}]{ gravity, }
+\item[{boolean}]{ ceil, }
+\item[{boolean}]{ ground, }
+\item[{boolean}]{ leftWall, }
+\item[{boolean}]{ rightWall, }
+\item[{int}]{ width, }
+\item[{int}]{ height, }
+\item[{int}]{ scale, }
+\item[{JFrame}]{ frame}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a5c107188952b8cec978064346d201c9e}
+main constructor of world
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em gravity}]gravity of the world \item[{\em ceil}]it indicates that our world has ceil or not \item[{\em ground}]it indicates that our world has ground or not \item[{\em leftWall}]it indicates that our world has leftWall or not \item[{\em rightWall}]it indicates that our world has rightWall or not \item[{\em width}]width of world \item[{\em height}]height of world \item[{\em scale}]scale of world \item[{\em frame}]frame of world \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!World@{World}}
+\index{World@{World}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{World}]{\setlength{\rightskip}{0pt plus 5cm}Engine.World.World.World (
+\begin{DoxyParamCaption}
+\item[{double}]{ gravity, }
+\item[{int}]{ scale, }
+\item[{int}]{ width, }
+\item[{int}]{ height, }
+\item[{JFrame}]{ frame}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_aca11a205b9dd182ff8d5459f1323f867}
+constructor of world
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em gravity}]gravity of the world \item[{\em scale}]scale of world \item[{\em width}]width of world \item[{\em height}]height of world \item[{\em frame}]frame of world \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Engine::World::World@{Engine::World::World}!addCollisionListener@{addCollisionListener}}
+\index{addCollisionListener@{addCollisionListener}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{addCollisionListener}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.addCollisionListener (
+\begin{DoxyParamCaption}
+\item[{{\bf CollisionListener}}]{ listener}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_acf24ea729ba52441e1ec79e0b8f8b81e}
+adds a collision listener to world
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em listener}]the listener that is going to be added to the world \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!addObject@{addObject}}
+\index{addObject@{addObject}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{addObject}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.addObject (
+\begin{DoxyParamCaption}
+\item[{{\bf Object2D}}]{ obj}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a93c3d4e79f770021ba12317d9632fe7d}
+adds a object to the world
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em obj}]the object that will be added to world \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!drawScale@{drawScale}}
+\index{drawScale@{drawScale}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{drawScale}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.drawScale (
+\begin{DoxyParamCaption}
+\item[{Graphics2D}]{ g}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a3cd7ae940554c4e8f59a56494681cb29}
+draws the scale on the screen
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em g}]graphics2D object of screen \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!fireCollisionEvent@{fireCollisionEvent}}
+\index{fireCollisionEvent@{fireCollisionEvent}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{fireCollisionEvent}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.fireCollisionEvent (
+\begin{DoxyParamCaption}
+\item[{{\bf CollisionEvent}}]{ evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [package]}}\label{class_engine_1_1_world_1_1_world_adbd7c85d03270ec42ea9f9a48eec563a}
+indicates that the event is happened
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em evt}]event that is happened \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!getClock@{getClock}}
+\index{getClock@{getClock}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{getClock}]{\setlength{\rightskip}{0pt plus 5cm}Timer Engine.World.World.getClock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_ae75a94d60a2aee8992702b9eaffd9e12}
+return the clock of world
+
+\begin{DoxyReturn}{Returns}
+clock of world 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!getDefaultFrame@{getDefaultFrame}}
+\index{getDefaultFrame@{getDefaultFrame}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{getDefaultFrame}]{\setlength{\rightskip}{0pt plus 5cm}JFrame Engine.World.World.getDefaultFrame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a3175705ca1c7bc7bdbdfafd387df3591}
+returns the default frame of world
+
+\begin{DoxyReturn}{Returns}
+default frame of world 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!getGravity@{getGravity}}
+\index{getGravity@{getGravity}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{getGravity}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.World.World.getGravity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a8c58808e3d6a34ee1a83843cb66657d8}
+returns the gravity of world
+
+\begin{DoxyReturn}{Returns}
+gravity of world 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{getHeight}]{\setlength{\rightskip}{0pt plus 5cm}int Engine.World.World.getHeight (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a8e9c9e5f93d78637b3af218c2bc36a39}
+access the height of world
+
+\begin{DoxyReturn}{Returns}
+height of the world 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!getObjects@{getObjects}}
+\index{getObjects@{getObjects}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{getObjects}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Object2D}$>$ Engine.World.World.getObjects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a57790bc2b24b92a4625e6f49ef25f2c0}
+to access all of the worlds objects
+
+\begin{DoxyReturn}{Returns}
+returns the list of all worlds objects 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!getScale@{getScale}}
+\index{getScale@{getScale}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{getScale}]{\setlength{\rightskip}{0pt plus 5cm}int Engine.World.World.getScale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_ae6ca31807c3ddea0e80bfb48740fdaa4}
+to access the scale value of the world (the pixel numbers of one meter)
+
+\begin{DoxyReturn}{Returns}
+the scale value for this world 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!getTimeStep@{getTimeStep}}
+\index{getTimeStep@{getTimeStep}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{getTimeStep}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.World.World.getTimeStep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a92fa828361e8e6f73efdd43b995615c9}
+returns the timestep of world
+
+\begin{DoxyReturn}{Returns}
+timestep of world 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{getWidth}]{\setlength{\rightskip}{0pt plus 5cm}int Engine.World.World.getWidth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_aecbbb6746ac8169b1bdd6c1e80462064}
+access the width of world
+
+\begin{DoxyReturn}{Returns}
+width of the world 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!getWindAngle@{getWindAngle}}
+\index{getWindAngle@{getWindAngle}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{getWindAngle}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.World.World.getWindAngle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_ac9154c8e14ee146465f38988ca1b08ed}
+returns the wind angle of world
+
+\begin{DoxyReturn}{Returns}
+wind angle of world 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!getWindPower@{getWindPower}}
+\index{getWindPower@{getWindPower}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{getWindPower}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.World.World.getWindPower (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_acd85055d453c9977077544d98f335e3e}
+returns the wind power of world
+
+\begin{DoxyReturn}{Returns}
+wind power of world 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!getWorldCanvas@{getWorldCanvas}}
+\index{getWorldCanvas@{getWorldCanvas}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{getWorldCanvas}]{\setlength{\rightskip}{0pt plus 5cm}Canvas Engine.World.World.getWorldCanvas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a402c25bf60ecfeb1820a5c3e203f49c1}
+worlds canvas
+
+\begin{DoxyReturn}{Returns}
+worlds canvas 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!IntervalDistance@{IntervalDistance}}
+\index{IntervalDistance@{IntervalDistance}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{IntervalDistance}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.World.World.IntervalDistance (
+\begin{DoxyParamCaption}
+\item[{double}]{ minA, }
+\item[{double}]{ maxA, }
+\item[{double}]{ minB, }
+\item[{double}]{ maxB}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a60f6b6772fd1c083c8cc40e306d44bb3}
+Calculate the distance between [minA, maxA] and [minB, maxB] ,The distance will be negative if the intervals overlap
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em minA}]minimum position of objectA's projection area \item[{\em maxA}]maximum position of objectA's projection area \item[{\em minB}]minimum position of objectB's projection area \item[{\em maxB}]maximum position of objectB's projection area \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+interval between two projection areas 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!isCeil@{isCeil}}
+\index{isCeil@{isCeil}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{isCeil}]{\setlength{\rightskip}{0pt plus 5cm}boolean Engine.World.World.isCeil (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a45e2371f412e6a653f1888f1e5678b00}
+return true if the world has ceil
+
+\begin{DoxyReturn}{Returns}
+boolean ceil 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!isGround@{isGround}}
+\index{isGround@{isGround}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{isGround}]{\setlength{\rightskip}{0pt plus 5cm}boolean Engine.World.World.isGround (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a79e402f7dbf2ae2e03623f18c9fa5763}
+return true if the world has ground
+
+\begin{DoxyReturn}{Returns}
+boolean ground 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!isLeaveShadow@{isLeaveShadow}}
+\index{isLeaveShadow@{isLeaveShadow}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{isLeaveShadow}]{\setlength{\rightskip}{0pt plus 5cm}boolean Engine.World.World.isLeaveShadow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a5df0cb6b77c4b2a659bf844b6ca7239f}
+\begin{DoxyReturn}{Returns}
+Checks if The \doxyref{World}{p.}{class_engine_1_1_world_1_1_world} Leaves Shadow or Not 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!isLeftWall@{isLeftWall}}
+\index{isLeftWall@{isLeftWall}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{isLeftWall}]{\setlength{\rightskip}{0pt plus 5cm}boolean Engine.World.World.isLeftWall (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a0ada7079911c4529f2e90e9807a0a499}
+returns true if the world has left wall
+
+\begin{DoxyReturn}{Returns}
+boolean left wall 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!isRightWall@{isRightWall}}
+\index{isRightWall@{isRightWall}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{isRightWall}]{\setlength{\rightskip}{0pt plus 5cm}boolean Engine.World.World.isRightWall (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_aa1539e44a7aaa72e06f77e7d9039cd65}
+returns true if the world has right wall
+
+\begin{DoxyReturn}{Returns}
+boolean right wall 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!projectObject@{projectObject}}
+\index{projectObject@{projectObject}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{projectObject}]{\setlength{\rightskip}{0pt plus 5cm}Double [$\,$] Engine.World.World.projectObject (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2D}}]{ axis, }
+\item[{{\bf CircularObject}}]{ obj}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_ade19534358d8162163d0ce09d8c97270}
+Calculates the projection of a circular object on an axis and returns it as a [min, max] interval
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em axis}]the axis that projction applies to \item[{\em obj}]object that will be projected to the axis \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+min and max of projected area 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!projectObject@{projectObject}}
+\index{projectObject@{projectObject}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{projectObject}]{\setlength{\rightskip}{0pt plus 5cm}Double [$\,$] Engine.World.World.projectObject (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2D}}]{ axis, }
+\item[{{\bf RectangularObject}}]{ obj}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_ac17d61500d5576bd21ba547ed3e5e64c}
+Calculates the projection of a rectangular object on an axis and returns it as a [min, max] interval
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em axis}]the axis that projction applies to \item[{\em obj}]object that will be projected to the axis \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+min and max of projected area 
+\end{DoxyReturn}
+\index{Engine::World::World@{Engine::World::World}!removeCollisionListener@{removeCollisionListener}}
+\index{removeCollisionListener@{removeCollisionListener}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{removeCollisionListener}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.removeCollisionListener (
+\begin{DoxyParamCaption}
+\item[{{\bf CollisionListener}}]{ listener}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a2d91b37b9e55b76eecf1928466c42674}
+removes a collision listener from world
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em listener}]the listener that is going to be removed from the world \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!setCeil@{setCeil}}
+\index{setCeil@{setCeil}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{setCeil}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.setCeil (
+\begin{DoxyParamCaption}
+\item[{boolean}]{ ceil}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_aad7d81b3fa732a2d1329450f6bfb13ec}
+sets the ceil boolean to assign ceil to world
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ceil}]boolean value for ceil if true the world has ceil \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!setClock@{setClock}}
+\index{setClock@{setClock}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{setClock}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.setClock (
+\begin{DoxyParamCaption}
+\item[{Timer}]{ clock}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a29a3fffe8b2016c15c9d3242f2387cc8}
+sets the clock of world
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em clock}]clock to set to world \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!setDefaultFrame@{setDefaultFrame}}
+\index{setDefaultFrame@{setDefaultFrame}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{setDefaultFrame}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.setDefaultFrame (
+\begin{DoxyParamCaption}
+\item[{JFrame}]{ defaultFrame}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a7c05e213d884e46e5f034fe55f128c85}
+sets the frame of the world
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em defaultFrame}]the frame that is going to be set to the world \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!setGravity@{setGravity}}
+\index{setGravity@{setGravity}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{setGravity}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.setGravity (
+\begin{DoxyParamCaption}
+\item[{double}]{ gravity}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_af9c4d12d62176b880ed37d4a9df70d22}
+sets the gravity
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em gravity}]gravity to set to world \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!setGround@{setGround}}
+\index{setGround@{setGround}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{setGround}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.setGround (
+\begin{DoxyParamCaption}
+\item[{boolean}]{ ground}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a9bdeb81b505fab3c9a3edbb1b4a78cd6}
+sets the ground boolean to assign ground to world
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ground}]boolean value for ground if true the world has ground \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!setHeight@{setHeight}}
+\index{setHeight@{setHeight}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{setHeight}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.setHeight (
+\begin{DoxyParamCaption}
+\item[{int}]{ height}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_af1f7684016e5c03222ebb6d805657591}
+sets the heights of world
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em height}]of the world \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!setLeaveShadow@{setLeaveShadow}}
+\index{setLeaveShadow@{setLeaveShadow}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{setLeaveShadow}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.setLeaveShadow (
+\begin{DoxyParamCaption}
+\item[{boolean}]{ leaveShadow}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a3ab3e6dcd519a78ca03bd4684829378f}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em leaveShadow}]Sets The leaveShadow Property (if true the world would not be cleared on each update) \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!setLeftWall@{setLeftWall}}
+\index{setLeftWall@{setLeftWall}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{setLeftWall}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.setLeftWall (
+\begin{DoxyParamCaption}
+\item[{boolean}]{ leftWall}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a3f23c7180a71101cc0ffa642f167e5e1}
+sets the left wall boolean to assign left wall to world
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em leftWall}]boolean value for left wall if true the world has left wall \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!setRightWall@{setRightWall}}
+\index{setRightWall@{setRightWall}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{setRightWall}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.setRightWall (
+\begin{DoxyParamCaption}
+\item[{boolean}]{ rightWall}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_aaa1f3efb47fa5dc308682c10d4a8beb5}
+sets the right wall boolean to assign left wall to world
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rightWall}]boolean value for right wall if true the world has right wall \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!setScale@{setScale}}
+\index{setScale@{setScale}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{setScale}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.setScale (
+\begin{DoxyParamCaption}
+\item[{int}]{ scale}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a7546c8fc35f880d5ce84f2bb6da0637b}
+sets the scale value for the world
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em scale}]scale value for this world \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!setTimeStep@{setTimeStep}}
+\index{setTimeStep@{setTimeStep}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{setTimeStep}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.setTimeStep (
+\begin{DoxyParamCaption}
+\item[{int}]{ timeStep}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_af312fb3dfd22a5f5a4951e0ce84491ab}
+sets the timestep
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em timeStep}]timestep to set to world \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!setWidth@{setWidth}}
+\index{setWidth@{setWidth}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{setWidth}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.setWidth (
+\begin{DoxyParamCaption}
+\item[{int}]{ width}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a1b42e3ad5604e50af52a4fbc8bebf5fe}
+sets the width of world
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em width}]of the world \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!setWindAngle@{setWindAngle}}
+\index{setWindAngle@{setWindAngle}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{setWindAngle}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.setWindAngle (
+\begin{DoxyParamCaption}
+\item[{double}]{ windAngle}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a0421e8ba8d485565415ca86890c4d7de}
+sets the wind angle
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em windAngle}]wind angle to set to world \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!setWindPower@{setWindPower}}
+\index{setWindPower@{setWindPower}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{setWindPower}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.setWindPower (
+\begin{DoxyParamCaption}
+\item[{double}]{ windPower}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a48bee9c64f4320049191cffdf18f22e8}
+sets the wind power
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em windPower}]windPower to set to world \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!setWorldCanvas@{setWorldCanvas}}
+\index{setWorldCanvas@{setWorldCanvas}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{setWorldCanvas}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.setWorldCanvas (
+\begin{DoxyParamCaption}
+\item[{Canvas}]{ worldCanvas}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_acbb1b95b0478d214f7bb4c158f140b86}
+sets the worlds canvas
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em worldCanvas}]worlds canvas \end{DoxyParams}
+\index{Engine::World::World@{Engine::World::World}!updateObject@{updateObject}}
+\index{updateObject@{updateObject}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{updateObject}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.updateObject (
+\begin{DoxyParamCaption}
+\item[{{\bf Object2D}}]{ obj}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_ab6d40fd22326a1bf8ee4a643b3623e7a}
+updates the state of object by timestep milliseconds step in every engineWait milliseconds
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em obj}]object that is going to be updated \end{DoxyParams}
+
+
+F = m $\ast$ a
+
+DeltaX = derivation(0.5at$^\wedge$2 + v0t + x0) = at + v0
+
+DeltaVX = derivation(at + x0) = a
+
+Rotating The Objects if it has Angular Speed not equal to ZERO
+
+\index{Engine::World::World@{Engine::World::World}!updateWorld@{updateWorld}}
+\index{updateWorld@{updateWorld}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{updateWorld}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.World.World.updateWorld (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_world_1_1_world_a3fe5986ba553664711c9a10398495f48}
+updates the canvas and state of objects of world in every engineWait milliseconds. It makes the world alive ! 
+
+This Approach was for the time we didn't have rotation...
+
+
+
+\subsection{Member Data Documentation}
+\index{Engine::World::World@{Engine::World::World}!listenerList@{listenerList}}
+\index{listenerList@{listenerList}!Engine::World::World@{Engine::World::World}}
+\subsubsection[{listenerList}]{\setlength{\rightskip}{0pt plus 5cm}javax.swing.event.EventListenerList {\bf Engine.World.World.listenerList} = new javax.swing.event.EventListenerList()\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_engine_1_1_world_1_1_world_ae6bc7346ebabe1ba39d99c27a2d563ff}
+Collision Related Part 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/Engine/World/World.java\end{DoxyCompactItemize}

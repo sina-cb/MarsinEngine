@@ -1,0 +1,22 @@
+log4j.rootLogger=TRACE, CA, FA, FAT
+
+#Console Appender
+log4j.appender.CA=org.apache.log4j.ConsoleAppender
+log4j.appender.CA.layout=org.apache.log4j.PatternLayout
+log4j.appender.CA.layout.ConversionPattern=%-4r [%t] %-5p %c %x - %m%n
+log4j.appender.CA.Threshold = DEBUG
+
+#File Appender
+log4j.appender.FA=org.apache.log4j.FileAppender
+log4j.appender.FA.File=logFile.log
+log4j.appender.FA.layout=org.apache.log4j.PatternLayout
+log4j.appender.FA.layout.ConversionPattern=%-4r [%t] %-5p %c %x - %m%n
+log4j.appender.FA.Threshold = DEBUG
+
+#File Appender Trace
+log4j.appender.FAT=org.apache.log4j.FileAppender
+log4j.appender.FAT.File=logFileWithTrace.log
+log4j.appender.FAT.layout=org.apache.log4j.PatternLayout
+log4j.appender.FAT.layout.ConversionPattern=%-4r [%t] %-5p %c %x - %m%n
+log4j.appender.FAT.Threshold = TRACE
+

@@ -1,0 +1,81 @@
+\section{Engine.EngineStarter Class Reference}
+\label{class_engine_1_1_engine_starter}\index{Engine::EngineStarter@{Engine::EngineStarter}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries UpdateWorld}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf EngineStarter} ({\bf World} world)
+\item 
+void {\bf start} ()
+\item 
+int {\bf getInitialDelay} ()
+\item 
+void {\bf setInitialDelay} (int initialDelay)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf World} {\bfseries world}\label{class_engine_1_1_engine_starter_ade1dff2ec07aad7e98ee09e39b433d72}
+
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries initialDelay} = 1000\label{class_engine_1_1_engine_starter_a28cf877a6c94d7c0c63478e80b080960}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by IntelliJ IDEA. User: Sina Solaimanpour Date: 10/20/11 Time: 12:09 AM 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Engine::EngineStarter@{Engine::EngineStarter}!EngineStarter@{EngineStarter}}
+\index{EngineStarter@{EngineStarter}!Engine::EngineStarter@{Engine::EngineStarter}}
+\subsubsection[{EngineStarter}]{\setlength{\rightskip}{0pt plus 5cm}Engine.EngineStarter.EngineStarter (
+\begin{DoxyParamCaption}
+\item[{{\bf World}}]{ world}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_engine_starter_aeea2e7ed173b84b719b2a464d8fc07f3}
+This Will Create an \doxyref{EngineStarter}{p.}{class_engine_1_1_engine_starter} Object For Staring The Simulation With Help of a Timer. 
+\begin{DoxyParams}{Parameters}
+\item[{\em world}]The Engine's World We Want to Start The Simulation in \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Engine::EngineStarter@{Engine::EngineStarter}!getInitialDelay@{getInitialDelay}}
+\index{getInitialDelay@{getInitialDelay}!Engine::EngineStarter@{Engine::EngineStarter}}
+\subsubsection[{getInitialDelay}]{\setlength{\rightskip}{0pt plus 5cm}int Engine.EngineStarter.getInitialDelay (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_engine_starter_a631f6f0cb9da926adaec4db9bedfe1d5}
+\begin{DoxyReturn}{Returns}
+Worlds Initial Delay 
+\end{DoxyReturn}
+\index{Engine::EngineStarter@{Engine::EngineStarter}!setInitialDelay@{setInitialDelay}}
+\index{setInitialDelay@{setInitialDelay}!Engine::EngineStarter@{Engine::EngineStarter}}
+\subsubsection[{setInitialDelay}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.EngineStarter.setInitialDelay (
+\begin{DoxyParamCaption}
+\item[{int}]{ initialDelay}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_engine_starter_ae8130a6a652c7618fba47032cb58c27b}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em initialDelay}]Sets The Worlds Initial Delay Before Simulation Starts \end{DoxyParams}
+\index{Engine::EngineStarter@{Engine::EngineStarter}!start@{start}}
+\index{start@{start}!Engine::EngineStarter@{Engine::EngineStarter}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.EngineStarter.start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_engine_starter_aab2c87cdbe4af223c4b125366b2111e7}
+This is The Engine Start Point. This Method Will Start The Whole Simulation and Handles The Timer Object and FrameRate Related Stuff. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/Engine/EngineStarter.java\end{DoxyCompactItemize}

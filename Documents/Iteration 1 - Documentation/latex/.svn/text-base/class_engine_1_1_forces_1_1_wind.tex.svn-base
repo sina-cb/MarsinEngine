@@ -1,0 +1,37 @@
+\section{Engine.Forces.Wind Class Reference}
+\label{class_engine_1_1_forces_1_1_wind}\index{Engine::Forces::Wind@{Engine::Forces::Wind}}
+Inheritance diagram for Engine.Forces.Wind:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_engine_1_1_forces_1_1_wind}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Wind} (double power, double angle)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by IntelliJ IDEA. User: Sina Date: 10/22/11 Time: 11:40 AM To change this template use File $|$ Settings $|$ File Templates. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Engine::Forces::Wind@{Engine::Forces::Wind}!Wind@{Wind}}
+\index{Wind@{Wind}!Engine::Forces::Wind@{Engine::Forces::Wind}}
+\subsubsection[{Wind}]{\setlength{\rightskip}{0pt plus 5cm}Engine.Forces.Wind.Wind (
+\begin{DoxyParamCaption}
+\item[{double}]{ power, }
+\item[{double}]{ angle}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_forces_1_1_wind_a809b9e35bdd73dbfa5cacde290ef0192}
+This Will Create a \doxyref{Force}{p.}{class_engine_1_1_forces_1_1_force} Object as \doxyref{Wind}{p.}{class_engine_1_1_forces_1_1_wind} with the power and angle passed to the constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em power}]Power of the \doxyref{Wind}{p.}{class_engine_1_1_forces_1_1_wind} \item[{\em angle}]Angle og the \doxyref{Wind}{p.}{class_engine_1_1_forces_1_1_wind} \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/Engine/Forces/Wind.java\end{DoxyCompactItemize}

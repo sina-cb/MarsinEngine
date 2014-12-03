@@ -1,0 +1,346 @@
+\section{Engine.Utilities.Vector2D Class Reference}
+\label{class_engine_1_1_utilities_1_1_vector2_d}\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Vector2D} ()
+\item 
+{\bf Vector2D} (double x, double y)
+\item 
+double {\bf magnitude} ()
+\item 
+void {\bf normalize} ()
+\item 
+{\bf Vector2D} {\bf getNormalized} ()
+\item 
+double {\bf dotProduct} ({\bf Vector2D} vector)
+\item 
+double {\bf distanceTo} ({\bf Vector2D} vector)
+\item 
+boolean {\bf equals} (Object obj)
+\item 
+boolean {\bf equals} ({\bf Vector2D} v)
+\item 
+String {\bf toString} ()
+\item 
+double {\bf getX} ()
+\item 
+void {\bf setX} (double x)
+\item 
+double {\bf getY} ()
+\item 
+void {\bf setY} (double y)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf Vector2D} {\bf fromPoint} ({\bf Point2D} p)
+\item 
+static {\bf Vector2D} {\bf fromPoint} (int x, int y)
+\item 
+static {\bf Vector2D} {\bf plus} ({\bf Vector2D} a, {\bf Vector2D} b)
+\item 
+static {\bf Vector2D} {\bf minus} ({\bf Vector2D} a)
+\item 
+static {\bf Vector2D} {\bf minus} ({\bf Vector2D} a, {\bf Vector2D} b)
+\item 
+static {\bf Vector2D} {\bf multiply} ({\bf Vector2D} a, double b)
+\item 
+static {\bf Vector2D} {\bf multiply} ({\bf Vector2D} a, int b)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries x} = 0\label{class_engine_1_1_utilities_1_1_vector2_d_acd090e124c9a512bb93bc666ffbb252f}
+
+\item 
+double {\bfseries y} = 0\label{class_engine_1_1_utilities_1_1_vector2_d_a12652f795c21a7780fa2c3bf89ab381c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by IntelliJ IDEA. User: MshmouD Date: 10/29/11 Time: 2:34 PM To change this template use File $|$ Settings $|$ File Templates. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!Vector2D@{Vector2D}}
+\index{Vector2D@{Vector2D}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{Vector2D}]{\setlength{\rightskip}{0pt plus 5cm}Engine.Utilities.Vector2D.Vector2D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_vector2_d_a52dc63ba8c2ff49a79f6c0d91abd119b}
+Default Constructor For \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} This Will Create a \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} with X = 0 And Y = 0 \index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!Vector2D@{Vector2D}}
+\index{Vector2D@{Vector2D}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{Vector2D}]{\setlength{\rightskip}{0pt plus 5cm}Engine.Utilities.Vector2D.Vector2D (
+\begin{DoxyParamCaption}
+\item[{double}]{ x, }
+\item[{double}]{ y}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_vector2_d_a42767b3bd1ff5e7d36cf7402b71541ea}
+Main Constructor for \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} This Will Create a \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} With The Passes Parameters
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]Vector2D's x Value \item[{\em y}]Vector2D's y Value \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!distanceTo@{distanceTo}}
+\index{distanceTo@{distanceTo}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{distanceTo}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.Utilities.Vector2D.distanceTo (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2D}}]{ vector}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_vector2_d_ae3f45452bf8be9ed221bc8f4a99ac285}
+Calculates distance between two Vector2Ds
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em vector}]The Given \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Calculated Distance 
+\end{DoxyReturn}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!dotProduct@{dotProduct}}
+\index{dotProduct@{dotProduct}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{dotProduct}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.Utilities.Vector2D.dotProduct (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2D}}]{ vector}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_vector2_d_a03501f72b9f101cd38e45686a50b8c4a}
+Dot Product of the \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} With a given \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em vector}]The Given \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Dot Product Of the two Vector2Ds 
+\end{DoxyReturn}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!equals@{equals}}
+\index{equals@{equals}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean Engine.Utilities.Vector2D.equals (
+\begin{DoxyParamCaption}
+\item[{Object}]{ obj}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_vector2_d_a0281e6afeadce4a40c5f2868427794ee}
+Checks if a given Object is equal to the \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em obj}]The Given Object \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Check result as a boolean value 
+\end{DoxyReturn}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!equals@{equals}}
+\index{equals@{equals}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean Engine.Utilities.Vector2D.equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2D}}]{ v}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_vector2_d_ae78cb0491e15fd62697ecd68d7eeae5b}
+Checks if a given \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} is equal to the \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em v}]The Given \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Check result as a boolean value 
+\end{DoxyReturn}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!fromPoint@{fromPoint}}
+\index{fromPoint@{fromPoint}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{fromPoint}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2D} Engine.Utilities.Vector2D.fromPoint (
+\begin{DoxyParamCaption}
+\item[{int}]{ x, }
+\item[{int}]{ y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [static]}}\label{class_engine_1_1_utilities_1_1_vector2_d_a39e9b50977d652f84a42689d68b25a56}
+This Static Method Will Create a \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} From a given X and Y It Just Sets the Vector2D's x With given x and Vector2D's y with given y
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]The Given X \item[{\em y}]The Given Y \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Created \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} 
+\end{DoxyReturn}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!fromPoint@{fromPoint}}
+\index{fromPoint@{fromPoint}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{fromPoint}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2D} Engine.Utilities.Vector2D.fromPoint (
+\begin{DoxyParamCaption}
+\item[{{\bf Point2D}}]{ p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [static]}}\label{class_engine_1_1_utilities_1_1_vector2_d_ad2bba1b87af55bd74ef613ad5476515c}
+This Static Method Will Create a \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} From a \doxyref{Point2D}{p.}{class_engine_1_1_utilities_1_1_point2_d} It Just Sets the Vector2D's x With point's x and Vector2D's y with point's y
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em p}]The Point We Want to create a \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} from. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Created Vector 
+\end{DoxyReturn}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!getNormalized@{getNormalized}}
+\index{getNormalized@{getNormalized}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{getNormalized}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2D} Engine.Utilities.Vector2D.getNormalized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_vector2_d_aa88b996202f12e2067f690909ef30077}
+Returns The Normalized \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} without changing the original \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d}
+
+\begin{DoxyReturn}{Returns}
+Normalized \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} 
+\end{DoxyReturn}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!getX@{getX}}
+\index{getX@{getX}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{getX}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.Utilities.Vector2D.getX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_vector2_d_a87f3b09c71a320ee3d9fea5bea8e9f5b}
+\begin{DoxyReturn}{Returns}
+Vector2D's X Value 
+\end{DoxyReturn}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!getY@{getY}}
+\index{getY@{getY}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{getY}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.Utilities.Vector2D.getY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_vector2_d_ac6b76ec95206b4cc2975c1759c23bb6b}
+\begin{DoxyReturn}{Returns}
+Vector2D's Y Value 
+\end{DoxyReturn}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{magnitude}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.Utilities.Vector2D.magnitude (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_vector2_d_a3518a7e6ff64e03f2796e99c932cc634}
+This will calculates the Vector2D's magnitude
+
+\begin{DoxyReturn}{Returns}
+The Vector2D's Magnitude 
+\end{DoxyReturn}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!minus@{minus}}
+\index{minus@{minus}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{minus}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2D} Engine.Utilities.Vector2D.minus (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2D}}]{ a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [static]}}\label{class_engine_1_1_utilities_1_1_vector2_d_a619a810c888cf66416ad391622b4997b}
+Subtracts The Given \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} From the one we called this method for.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]The Given \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Subtract \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} 
+\end{DoxyReturn}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!minus@{minus}}
+\index{minus@{minus}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{minus}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2D} Engine.Utilities.Vector2D.minus (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2D}}]{ a, }
+\item[{{\bf Vector2D}}]{ b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [static]}}\label{class_engine_1_1_utilities_1_1_vector2_d_a64481f798476ded9111ec10dd54760c1}
+Subtracts Two Vector2Ds
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]The First \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} \item[{\em b}]The Second \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Subtract of two Vector2Ds 
+\end{DoxyReturn}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!multiply@{multiply}}
+\index{multiply@{multiply}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{multiply}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2D} Engine.Utilities.Vector2D.multiply (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2D}}]{ a, }
+\item[{double}]{ b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [static]}}\label{class_engine_1_1_utilities_1_1_vector2_d_a6f95983baa70d41df138668b01bcb48c}
+Multiply a double number to a \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]The \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} \item[{\em b}]The Double Number \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Product of Multiply 
+\end{DoxyReturn}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!multiply@{multiply}}
+\index{multiply@{multiply}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{multiply}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2D} Engine.Utilities.Vector2D.multiply (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2D}}]{ a, }
+\item[{int}]{ b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [static]}}\label{class_engine_1_1_utilities_1_1_vector2_d_a2441ac86b2bea8f5904599ecd073e549}
+Multiply an integer number to a \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]The \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} \item[{\em b}]The Integer Number \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Product of Multiply 
+\end{DoxyReturn}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!normalize@{normalize}}
+\index{normalize@{normalize}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{normalize}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Utilities.Vector2D.normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_vector2_d_aa9f96363a218462b68c4320149c0a608}
+This Will Normalize the \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} This is done as below: x = x / vector's Magnitude y = y / vector's Magnitude \index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!plus@{plus}}
+\index{plus@{plus}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{plus}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2D} Engine.Utilities.Vector2D.plus (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2D}}]{ a, }
+\item[{{\bf Vector2D}}]{ b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [static]}}\label{class_engine_1_1_utilities_1_1_vector2_d_a65fa28fd17d0437bf641d42bf6329ded}
+Adds Two Vector2Ds
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]The First \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} \item[{\em b}]The Second \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Add Product of two Vector2Ds 
+\end{DoxyReturn}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!setX@{setX}}
+\index{setX@{setX}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{setX}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Utilities.Vector2D.setX (
+\begin{DoxyParamCaption}
+\item[{double}]{ x}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_vector2_d_ad792eea2838f1b23607d11104fb11ff7}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]Sets Vector2D's X Value \end{DoxyParams}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!setY@{setY}}
+\index{setY@{setY}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{setY}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Utilities.Vector2D.setY (
+\begin{DoxyParamCaption}
+\item[{double}]{ y}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_vector2_d_a04959af0cdb5f8a2f70e5ec6cb5646e7}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em y}]Sets Vector2D's Y Value \end{DoxyParams}
+\index{Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}!toString@{toString}}
+\index{toString@{toString}!Engine::Utilities::Vector2D@{Engine::Utilities::Vector2D}}
+\subsubsection[{toString}]{\setlength{\rightskip}{0pt plus 5cm}String Engine.Utilities.Vector2D.toString (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_vector2_d_acdc00a9e33a7cbb64c1dc6f453ea1618}
+Overridden Method to convert the \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} to String
+
+\begin{DoxyReturn}{Returns}
+The String Value for a \doxyref{Vector2D}{p.}{class_engine_1_1_utilities_1_1_vector2_d} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/Engine/Utilities/Vector2D.java\end{DoxyCompactItemize}

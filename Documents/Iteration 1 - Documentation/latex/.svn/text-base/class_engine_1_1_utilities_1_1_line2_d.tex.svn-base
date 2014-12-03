@@ -1,0 +1,169 @@
+\section{Engine.Utilities.Line2D Class Reference}
+\label{class_engine_1_1_utilities_1_1_line2_d}\index{Engine::Utilities::Line2D@{Engine::Utilities::Line2D}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Line2D} ({\bf Point2D} start, {\bf Point2D} end)
+\item 
+double {\bf getDistanceFrom} ({\bf Point2D} point)
+\item 
+double {\bf getParallelLineDistance} ({\bf Line2D} line)
+\item 
+{\bf Point2D} {\bf getStart} ()
+\item 
+boolean {\bf isIfInfiniteM} ()
+\item 
+{\bf Point2D} {\bf getEnd} ()
+\item 
+double {\bf getM} ()
+\item 
+double {\bf getC} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf Point2D} {\bf intersectPoint} ({\bf Line2D} line1, {\bf Line2D} line2)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Point2D} {\bfseries start} = null\label{class_engine_1_1_utilities_1_1_line2_d_a410be554a2596b41ee02c4676a863547}
+
+\item 
+{\bf Point2D} {\bfseries end} = null\label{class_engine_1_1_utilities_1_1_line2_d_a1c053dc369de723e0a647e871887423d}
+
+\item 
+double {\bfseries m}\label{class_engine_1_1_utilities_1_1_line2_d_a5a16ff0903c1c4d27028e8b97f15353f}
+
+\item 
+double {\bfseries c}\label{class_engine_1_1_utilities_1_1_line2_d_a42304f57991970c6937cdd9643b67dd4}
+
+\item 
+boolean {\bfseries ifInfiniteM} = false\label{class_engine_1_1_utilities_1_1_line2_d_aa1cf87f0644cca088d7414e0aba3f33b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by IntelliJ IDEA. User: Sina Date: 10/24/11 Time: 10:04 AM To change this template use File $|$ Settings $|$ File Templates. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Engine::Utilities::Line2D@{Engine::Utilities::Line2D}!Line2D@{Line2D}}
+\index{Line2D@{Line2D}!Engine::Utilities::Line2D@{Engine::Utilities::Line2D}}
+\subsubsection[{Line2D}]{\setlength{\rightskip}{0pt plus 5cm}Engine.Utilities.Line2D.Line2D (
+\begin{DoxyParamCaption}
+\item[{{\bf Point2D}}]{ start, }
+\item[{{\bf Point2D}}]{ end}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_line2_d_a2e32c95d24e8a1b2f948f9cef4aaa3e0}
+Constructor For Creating a New Line out of two Points
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em start}]First Point For Creating The Line \item[{\em end}]Second Point For Creating The Line \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Engine::Utilities::Line2D@{Engine::Utilities::Line2D}!getC@{getC}}
+\index{getC@{getC}!Engine::Utilities::Line2D@{Engine::Utilities::Line2D}}
+\subsubsection[{getC}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.Utilities.Line2D.getC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_line2_d_ade75d972cc850746b0b53d9f2c6b43b8}
+\begin{DoxyReturn}{Returns}
+Line's Intercept 
+\end{DoxyReturn}
+\index{Engine::Utilities::Line2D@{Engine::Utilities::Line2D}!getDistanceFrom@{getDistanceFrom}}
+\index{getDistanceFrom@{getDistanceFrom}!Engine::Utilities::Line2D@{Engine::Utilities::Line2D}}
+\subsubsection[{getDistanceFrom}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.Utilities.Line2D.getDistanceFrom (
+\begin{DoxyParamCaption}
+\item[{{\bf Point2D}}]{ point}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_line2_d_a31a9ab89417a6c10a733f32aeb452dc3}
+This Will Return Minimum Distance of a Point from the line we're calling this method for.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em point}]The Point to find It's distance from the line. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Point's Distance from the line which is a Double value. 
+\end{DoxyReturn}
+\index{Engine::Utilities::Line2D@{Engine::Utilities::Line2D}!getEnd@{getEnd}}
+\index{getEnd@{getEnd}!Engine::Utilities::Line2D@{Engine::Utilities::Line2D}}
+\subsubsection[{getEnd}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point2D} Engine.Utilities.Line2D.getEnd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_line2_d_a876c180d48c263051dd2ad9e1cbd47a9}
+\begin{DoxyReturn}{Returns}
+Line's End Point 
+\end{DoxyReturn}
+\index{Engine::Utilities::Line2D@{Engine::Utilities::Line2D}!getM@{getM}}
+\index{getM@{getM}!Engine::Utilities::Line2D@{Engine::Utilities::Line2D}}
+\subsubsection[{getM}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.Utilities.Line2D.getM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_line2_d_aa8603ed53b36824cff399817e96e47da}
+\begin{DoxyReturn}{Returns}
+Line's tilt 
+\end{DoxyReturn}
+\index{Engine::Utilities::Line2D@{Engine::Utilities::Line2D}!getParallelLineDistance@{getParallelLineDistance}}
+\index{getParallelLineDistance@{getParallelLineDistance}!Engine::Utilities::Line2D@{Engine::Utilities::Line2D}}
+\subsubsection[{getParallelLineDistance}]{\setlength{\rightskip}{0pt plus 5cm}double Engine.Utilities.Line2D.getParallelLineDistance (
+\begin{DoxyParamCaption}
+\item[{{\bf Line2D}}]{ line}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_line2_d_a36f5390b53454a7e1784f7109e6f9402}
+Finds a line distance from the line we're calling this method for. Note: Both Lines Must Be Parallels
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em line}]The Line For Calculating Distance \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Distance of two Lines Which is a Double Value 
+\end{DoxyReturn}
+\index{Engine::Utilities::Line2D@{Engine::Utilities::Line2D}!getStart@{getStart}}
+\index{getStart@{getStart}!Engine::Utilities::Line2D@{Engine::Utilities::Line2D}}
+\subsubsection[{getStart}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point2D} Engine.Utilities.Line2D.getStart (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_line2_d_a3a88c9c634e231137bd2b5eda85b1fbb}
+\begin{DoxyReturn}{Returns}
+Line's Start Point 
+\end{DoxyReturn}
+\index{Engine::Utilities::Line2D@{Engine::Utilities::Line2D}!intersectPoint@{intersectPoint}}
+\index{intersectPoint@{intersectPoint}!Engine::Utilities::Line2D@{Engine::Utilities::Line2D}}
+\subsubsection[{intersectPoint}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Point2D} Engine.Utilities.Line2D.intersectPoint (
+\begin{DoxyParamCaption}
+\item[{{\bf Line2D}}]{ line1, }
+\item[{{\bf Line2D}}]{ line2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [static]}}\label{class_engine_1_1_utilities_1_1_line2_d_a3840c249fc3a8a01b9d7493d87362554}
+This Will find the intersecting point of two crossing lines
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em line1}]First Line \item[{\em line2}]Second Line \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Intersecting Point of the Two Lines 
+\end{DoxyReturn}
+\index{Engine::Utilities::Line2D@{Engine::Utilities::Line2D}!isIfInfiniteM@{isIfInfiniteM}}
+\index{isIfInfiniteM@{isIfInfiniteM}!Engine::Utilities::Line2D@{Engine::Utilities::Line2D}}
+\subsubsection[{isIfInfiniteM}]{\setlength{\rightskip}{0pt plus 5cm}boolean Engine.Utilities.Line2D.isIfInfiniteM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_utilities_1_1_line2_d_aee6dc27e419f081bf8fb21be508824b6}
+This Method Checks if the Line has an infinite tilt
+
+\begin{DoxyReturn}{Returns}
+Returns a boolean that indicates if the line has infinite tilt or not. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/Engine/Utilities/Line2D.java\end{DoxyCompactItemize}

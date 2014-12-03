@@ -1,0 +1,16 @@
+\section{Test.TestApp1 Class Reference}
+\label{class_test_1_1_test_app1}\index{Test::TestApp1@{Test::TestApp1}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries main} (String[$\,$] args)\label{class_test_1_1_test_app1_a1fd610da861cd5670b913e275e0b62bb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by IntelliJ IDEA. User: Sina Solaimanpour Date: 10/18/11 Time: 10:48 PM 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/Test/TestApp1.java\end{DoxyCompactItemize}

@@ -1,0 +1,296 @@
+\section{Engine.Objects.RectangularObject Class Reference}
+\label{class_engine_1_1_objects_1_1_rectangular_object}\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+Inheritance diagram for Engine.Objects.RectangularObject:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_engine_1_1_objects_1_1_rectangular_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf RectangularObject} ()
+\item 
+{\bf RectangularObject} (int width, int length)
+\item 
+{\bf RectangularObject} (double mass, {\bf Point2D} location, double fi, {\bf Velocity} velocity, int width, int length)
+\item 
+int {\bf getWidth} ()
+\item 
+void {\bf setWidth} (int width)
+\item 
+{\bf Point2D} {\bf getUpperLeftCorner} ()
+\item 
+void {\bf setUpperLeftCorner} ({\bf Point2D} upperLeftCorner)
+\item 
+{\bf Point2D} {\bf getUpperRightCorner} ()
+\item 
+void {\bf setUpperRightCorner} ({\bf Point2D} upperRightCorner)
+\item 
+{\bf Point2D} {\bf getLowerRightCorner} ()
+\item 
+void {\bf setLowerRightCorner} ({\bf Point2D} lowerRightCorner)
+\item 
+{\bf Point2D} {\bf getLowerLeftCorner} ()
+\item 
+void {\bf setLowerLeftCorner} ({\bf Point2D} lowerLeftCorner)
+\item 
+int {\bf getLength} ()
+\item 
+void {\bf setLength} (int length)
+\item 
+List$<$ {\bf Point2D} $>$ {\bf getPoints} ()
+\item 
+List$<$ {\bf Vector2D} $>$ {\bf getEdges} ()
+\item 
+void {\bf updateEdges} ()
+\item 
+void {\bf updateCenter} ()
+\item 
+{\bf Point2D} {\bf getCenter} ()
+\item 
+void {\bf setCenter} ({\bf Point2D} center)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries width} = 100\label{class_engine_1_1_objects_1_1_rectangular_object_a278b25b08ef46d4ae8c3d2dab4616e56}
+
+\item 
+int {\bfseries length} = 100\label{class_engine_1_1_objects_1_1_rectangular_object_a914fdabdb38f3c6bfe2cecff490d21d8}
+
+\item 
+List$<$ {\bf Point2D} $>$ {\bfseries points} = new ArrayList$<${\bf Point2D}$>$()\label{class_engine_1_1_objects_1_1_rectangular_object_a1509b26c3756567ce0045324cf8b25bd}
+
+\item 
+List$<$ {\bf Vector2D} $>$ {\bfseries edges} = new ArrayList$<${\bf Vector2D}$>$()\label{class_engine_1_1_objects_1_1_rectangular_object_aaa8177c30e2ba78601523fa709fa6a9f}
+
+\item 
+{\bf Point2D} {\bfseries center}\label{class_engine_1_1_objects_1_1_rectangular_object_ae0f8698120bd06984caf10bf4ddd7999}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by IntelliJ IDEA. User: Sina Solaimanpour Date: 10/18/11 Time: 10:41 PM 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!RectangularObject@{RectangularObject}}
+\index{RectangularObject@{RectangularObject}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{RectangularObject}]{\setlength{\rightskip}{0pt plus 5cm}Engine.Objects.RectangularObject.RectangularObject (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a9a11ce7d1789f0cdd771cb1741b66503}
+Rectangular Object's Default Constructor This will set the objects properties to the default values as below: width = 100 length = 100 (All The Other Values is set as The Object2D's default amounts...) \index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!RectangularObject@{RectangularObject}}
+\index{RectangularObject@{RectangularObject}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{RectangularObject}]{\setlength{\rightskip}{0pt plus 5cm}Engine.Objects.RectangularObject.RectangularObject (
+\begin{DoxyParamCaption}
+\item[{int}]{ width, }
+\item[{int}]{ length}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_ae0a419cbf5b78c340e9c1706086ab6d3}
+This constructor will get the width and length of the object and other properties will be set as default This will also sets the Object's default Rotation Center Point
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em width}]Object's Width \item[{\em length}]Object's Length \end{DoxyParams}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!RectangularObject@{RectangularObject}}
+\index{RectangularObject@{RectangularObject}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{RectangularObject}]{\setlength{\rightskip}{0pt plus 5cm}Engine.Objects.RectangularObject.RectangularObject (
+\begin{DoxyParamCaption}
+\item[{double}]{ mass, }
+\item[{{\bf Point2D}}]{ location, }
+\item[{double}]{ fi, }
+\item[{{\bf Velocity}}]{ velocity, }
+\item[{int}]{ width, }
+\item[{int}]{ length}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a803b5efa87ca23322b0d7f08744d6e05}
+Rectangular Object's Main Constructor This will also sets the Object's default Rotation Center Point
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em mass}]Object's Mass \item[{\em location}]Object's Location Point \item[{\em fi}]Object's Rotation Value \item[{\em velocity}]Object's Velocity Vector \item[{\em width}]Object's Width \item[{\em length}]Object's Length \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!getCenter@{getCenter}}
+\index{getCenter@{getCenter}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{getCenter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point2D} Engine.Objects.RectangularObject.getCenter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a75b4dfe5e39fc25d694c957d9f73460d}
+\begin{DoxyReturn}{Returns}
+Returns Object's Center point 
+\end{DoxyReturn}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!getEdges@{getEdges}}
+\index{getEdges@{getEdges}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{getEdges}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Vector2D}$>$ Engine.Objects.RectangularObject.getEdges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_aad67d466505cff481d0d1469b3bdb1ed}
+\begin{DoxyReturn}{Returns}
+It Returns Object's Edges for collision detection 
+\end{DoxyReturn}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!getLength@{getLength}}
+\index{getLength@{getLength}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{getLength}]{\setlength{\rightskip}{0pt plus 5cm}int Engine.Objects.RectangularObject.getLength (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a17a2ff9146b43d99f997ed9ab66922b9}
+\begin{DoxyReturn}{Returns}
+Object's Length 
+\end{DoxyReturn}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!getLowerLeftCorner@{getLowerLeftCorner}}
+\index{getLowerLeftCorner@{getLowerLeftCorner}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{getLowerLeftCorner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point2D} Engine.Objects.RectangularObject.getLowerLeftCorner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a5f16f6bdea5235c69a0d03df9c5ba31f}
+\begin{DoxyReturn}{Returns}
+Object's Lower Left Corner Point 
+\end{DoxyReturn}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!getLowerRightCorner@{getLowerRightCorner}}
+\index{getLowerRightCorner@{getLowerRightCorner}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{getLowerRightCorner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point2D} Engine.Objects.RectangularObject.getLowerRightCorner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_aa10619ba75ac2bb723f10e40105ce85a}
+\begin{DoxyReturn}{Returns}
+Object's Lower Right Corner Point 
+\end{DoxyReturn}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!getPoints@{getPoints}}
+\index{getPoints@{getPoints}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{getPoints}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Point2D}$>$ Engine.Objects.RectangularObject.getPoints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a71a1a1c451c590fa55e9022eaccbb5d1}
+\begin{DoxyReturn}{Returns}
+Object's Corners Point 
+\end{DoxyReturn}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!getUpperLeftCorner@{getUpperLeftCorner}}
+\index{getUpperLeftCorner@{getUpperLeftCorner}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{getUpperLeftCorner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point2D} Engine.Objects.RectangularObject.getUpperLeftCorner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a118aa33005ea06d60fffb7713aed1c5f}
+\begin{DoxyReturn}{Returns}
+Object's Upper Left Corner Point 
+\end{DoxyReturn}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!getUpperRightCorner@{getUpperRightCorner}}
+\index{getUpperRightCorner@{getUpperRightCorner}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{getUpperRightCorner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point2D} Engine.Objects.RectangularObject.getUpperRightCorner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a5143ad2915006bbfe4a5189c36872e0b}
+\begin{DoxyReturn}{Returns}
+Object's Upper Right Corner Point 
+\end{DoxyReturn}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{getWidth}]{\setlength{\rightskip}{0pt plus 5cm}int Engine.Objects.RectangularObject.getWidth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a23fa74b223f72367440b6a141701d704}
+\begin{DoxyReturn}{Returns}
+Object's Width 
+\end{DoxyReturn}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!setCenter@{setCenter}}
+\index{setCenter@{setCenter}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{setCenter}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.RectangularObject.setCenter (
+\begin{DoxyParamCaption}
+\item[{{\bf Point2D}}]{ center}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_aa5729fb596ec8ed83e73ca96433cb192}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em center}]Sets Object's Center Point \end{DoxyParams}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!setLength@{setLength}}
+\index{setLength@{setLength}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{setLength}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.RectangularObject.setLength (
+\begin{DoxyParamCaption}
+\item[{int}]{ length}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a1f02fbb68f607a7080d30e6c528d420c}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em length}]Sets Object's Length and it will also sets the rotation center's X Value as length / 2 \end{DoxyParams}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!setLowerLeftCorner@{setLowerLeftCorner}}
+\index{setLowerLeftCorner@{setLowerLeftCorner}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{setLowerLeftCorner}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.RectangularObject.setLowerLeftCorner (
+\begin{DoxyParamCaption}
+\item[{{\bf Point2D}}]{ lowerLeftCorner}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a6b40fee91b4130b9f3ff5023d061da02}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em lowerLeftCorner}]Sets Object's Lower Left Corner Point \end{DoxyParams}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!setLowerRightCorner@{setLowerRightCorner}}
+\index{setLowerRightCorner@{setLowerRightCorner}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{setLowerRightCorner}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.RectangularObject.setLowerRightCorner (
+\begin{DoxyParamCaption}
+\item[{{\bf Point2D}}]{ lowerRightCorner}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a8814fb6a892e57158d3c21780b024806}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em lowerRightCorner}]Sets Object's Lower Right Corner Point \end{DoxyParams}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!setUpperLeftCorner@{setUpperLeftCorner}}
+\index{setUpperLeftCorner@{setUpperLeftCorner}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{setUpperLeftCorner}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.RectangularObject.setUpperLeftCorner (
+\begin{DoxyParamCaption}
+\item[{{\bf Point2D}}]{ upperLeftCorner}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a618952117dbe8a5f04709e591c7d88aa}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em upperLeftCorner}]Sets Object's Upper Left Corner Point \end{DoxyParams}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!setUpperRightCorner@{setUpperRightCorner}}
+\index{setUpperRightCorner@{setUpperRightCorner}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{setUpperRightCorner}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.RectangularObject.setUpperRightCorner (
+\begin{DoxyParamCaption}
+\item[{{\bf Point2D}}]{ upperRightCorner}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a8f5cc22a68f27e202707bfc9084eff24}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em upperRightCorner}]Sets Upper Corner Point \end{DoxyParams}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!setWidth@{setWidth}}
+\index{setWidth@{setWidth}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{setWidth}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.RectangularObject.setWidth (
+\begin{DoxyParamCaption}
+\item[{int}]{ width}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a3b5b94ba430b7a0fb731a0bf5fe7ed83}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em width}]Sets Object's Width \end{DoxyParams}
+\index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!updateCenter@{updateCenter}}
+\index{updateCenter@{updateCenter}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{updateCenter}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.RectangularObject.updateCenter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a2d171ff562ecd0ce6c6c0759ebe30702}
+This Will Updates The object's center point based on the new Corners after Object's Rotation \index{Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}!updateEdges@{updateEdges}}
+\index{updateEdges@{updateEdges}!Engine::Objects::RectangularObject@{Engine::Objects::RectangularObject}}
+\subsubsection[{updateEdges}]{\setlength{\rightskip}{0pt plus 5cm}void Engine.Objects.RectangularObject.updateEdges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_1_1_objects_1_1_rectangular_object_a8e7dc6958d6776b4706e28091adcfa39}
+This Method Will Updates the object's Edges based on the new Corners after Object's Rotation 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/Engine/Objects/RectangularObject.java\end{DoxyCompactItemize}
